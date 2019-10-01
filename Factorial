@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+int a,fact =1;
+printf("Enter the number the factorial is to be determined of\n");
+scanf("%d",&a);
+pirntf("The factorial of %d is \n %d\!=",a,a);
+for(int i=a;i>=1;a--)
+{
+fact=fact*i;
+printf("%d",i);
+if(i==1)
+{
+goto end;
+}
+pirntf("*");
+}
+end:
+printf("=%d",fact);
+return 0;
+}
